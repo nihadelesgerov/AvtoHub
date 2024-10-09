@@ -1,0 +1,160 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haqqımızda</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Avto<span>Hub</span></div>
+        <nav>
+            <ul>
+                <li><a asp-action="HomePage">Əsas səhifə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-info">
+            <div class="car-info">
+                <h1>AvtoHub Haqqında</h1>
+                <p><strong>AvtoHub</strong>, insanların öz avtomobillərini satmaq üçün elan yerləşdirməsinə xidmət edən, yüksək təhlükəsizlik tədbirləri ilə qorunan bir platformadır. Bu layihə avtomobil alqı-satqısı sahəsində şəffaflıq və təhlükəsizliyi təmin etmək məqsədilə yaradılmışdır.</p>
+                <p>Qurucusu Nihad Ələsgərov olan AvtoHub layihəsi, istifadəçilərə asanlıqla elanlarını yerləşdirməyə, avtomobilləri izləməyə və təhlükəsiz şəkildə alış-veriş etməyə imkan verir. AvtoHub-da satıcılar və alıcılar arasındakı əlaqə təhlükəsizlik tədbirləri ilə qorunur və bu da avtomobil ticarətində inam yaradır.</p>
+                <a asp-action="Contact" class="contact-seller-btn">Dəstək ilə əlaqə saxlayın</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AvtoHub. Bütün hüquqlar qorunur.</p>
+    </footer>
+    <style>
+              /* General Styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes full height */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+        main {
+            flex: 1; /* Allow the main content to grow and fill available space */
+            padding-top: 120px;
+        }
+        /* Header Styles */
+        header {
+            background-color: #212A31;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo span {
+            color: #124E66;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #124E66;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding-top: 120px;
+        }
+
+        /* AvtoHub Project Info Section */
+        .project-info {
+            background-color: #fff;
+            padding: 50px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto 50px;
+            border-radius: 10px;
+        }
+
+        .project-info .car-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project-info .car-info p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-info .contact-seller-btn {
+            display: inline-block;
+            background-color: #124E66;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .project-info .contact-seller-btn:hover {
+            background-color: #0a3749;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #212A31;
+            color: #fff;
+            text-align: center;
+            padding: 20px 50px;
+        }
+
+    </style>
+</body>
+</html>

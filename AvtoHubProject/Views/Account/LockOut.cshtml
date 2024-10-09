@@ -1,0 +1,143 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvtoHub - LockOut Page</title>
+    <link rel="icon" href="~/logoAvtoHub.jfif" type="image/x-icon">
+
+</head>
+<body>
+    <div class="lockout-container">
+        <div class="logo">
+            <h1>AvtoHub</h1>
+        </div>
+        <div class="message">
+            <h2>Hesabınız kilidlənib</h2>
+            <p>Təhlükəsizlik məqsədilə hesabınız kilidlənib. Zəhmət olmasa sonra yenidən cəhd edin və ya dəstək xidməti ilə əlaqə saxlayın.</p>
+        </div>
+        <div class="actions">
+            <form asp-action="Login" asp-controller="Account">
+                <button id="retry-btn" class="retry-btn" disabled>Retry</button>
+            </form>
+            <p id="countdown">Zəhmət olmasa 5:00 gözləyin</p>
+            <form asp-action="Contact">
+                <button class="support-btn">Dəstəklə Əlaqə</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0b0c10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #66fcf1;
+        }
+
+        .lockout-container {
+            text-align: center;
+            background-color: #1f2833;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        .logo h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #66fcf1;
+        }
+
+        .message h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .actions .retry-btn, .actions .support-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: not-allowed;
+        }
+
+        .retry-btn {
+            background-color: #45a29e;
+            color: #0b0c10;
+            cursor: not-allowed;
+        }
+
+            .retry-btn:disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+
+            .retry-btn:enabled {
+                cursor: pointer;
+            }
+
+        .support-btn {
+            background-color: #c5c6c7;
+            color: #0b0c10;
+        }
+
+            .support-btn:hover {
+                background-color: #66fcf1;
+                color: #0b0c10;
+            }
+
+        #countdown {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #c5c6c7;
+        }
+
+    </style>
+    <script>
+        // 5 minutes countdown (in seconds)
+        let timeLeft = 300; // 5 minutes * 60 seconds
+        const countdownElement = document.getElementById('countdown');
+        const retryButton = document.getElementById('retry-btn');
+
+        function updateCountdown() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            countdownElement.textContent = `Please wait ${minutes}:${seconds < 10 ? '0' : ''}${seconds} before retrying.`;
+
+            // Decrease time
+            timeLeft--;
+
+            // When countdown is over, enable the retry button
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                retryButton.disabled = false;
+                countdownElement.textContent = "You can now retry.";
+            }
+        }
+
+        // Start countdown
+        const timer = setInterval(updateCountdown, 1000);
+
+        // Disable retry button functionality
+        retryButton.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

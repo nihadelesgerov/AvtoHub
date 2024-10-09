@@ -1,0 +1,510 @@
+﻿@model List<AvtoHubProject.Models.Product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvtoHub- Ana Səhifə</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="~/logoAvtoHub.jfif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">Auto<span>Hub</span></div>
+
+        
+        @if(User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        {
+            <nav>
+                <ul>
+                    <li><a asp-action="AdminDashboard" asp-controller="AdminHub">AdminDashboard</a></li>
+                    <li><a asp-action="Statistics" asp-controller="AdminHub">Statistikalar</a></li>
+                    <li><a asp-action="Feedbacks" asp-controller="AdminHub">Müraciətlər/Şikayətlər</a></li>
+                </ul>   
+                <div class="auth-buttons">
+                    <a asp-action="MyAccount" asp-controller="AvtoHub" class="login-btn">@User.Identity.Name</a>
+                    <form method="post" asp-action="LockOut" asp-controller="Account" class="logout-btn">
+                       <button id="btn">Çıxış et</button>
+                    </form>
+                </div>
+            </nav>
+        }
+        else if(User.Identity.IsAuthenticated && User.IsInRole("User"))
+        {
+            <nav>
+                <ul>
+                    <li><a asp-action="About" asp-controller="AvtoHub">Haqqımızda</a></li>
+                    <li><a asp-action="Contact" asp-controller="AvtoHub">Əlaqə</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <form asp-controller="AvtoHub" asp-action="profile" method="get">
+                        <button id="btn">@User.Identity.Name</button>
+                    </form>
+                    <form asp-controller="Account" asp-action="SignOut" method="post">
+                       <button id="btn">Çıxış et</button>
+                    </form>
+
+                </div>
+            </nav>
+        }
+        else
+        {
+            <nav>
+                <ul>
+                    <li><a asp-action="AboutUs" asp-controller="AvtoHub">Haqqımızda</a></li>
+                    <li><a asp-action="Contact" asp-controller="AvtoHub">Əlaqə</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a asp-action="Login" asp-controller="Account" class="login-btn">Daxil Ol</a>
+                    <a style="background-color:green" asp-action="Register" asp-controller="Account" class="logout-btn">Qeydiyyatdan Keç</a>
+                </div>
+            </nav>
+        }
+        <div class="search-bar">
+            <input type="text" placeholder="Axtar...">
+            <select>
+                <option value="0">Yeni?</option>
+                <option value="new">Yeni</option>
+                <option value="used">Yeni Deyil</option>
+            </select>
+            <select>
+                <option value="0">Ərazi</option>
+                <option value="ny">Bakı</option>
+                <option value="la">Los Angeles</option>
+            </select>
+            <select>
+                <option value="0">Qiymət aralığı</option>
+                <option value="0-20000">$0 - $20,000</option>
+                <option value="20000-40000">$20,000 - $40,000</option>
+                <option value="40000-60000">$40,000 - $60,000</option>
+            </select>
+            <select>
+                <option value="0">İl</option>
+                <option value="2020-2024">2020 - 2024</option>
+                <option value="2015-2019">2015 - 2019</option>
+                <option value="2010-2014">2010 - 2014</option>
+            </select>
+            <button class="search-btn">Axtar</button>
+        </div>
+    </header>
+    <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Xəyalındakı Avtomobili Tap</h1>
+                    <p>Ən keyfiyyətli avtomobillərdə ən yaxşı təklifləri kəşf edin.</p>
+                    <a asp-action="Login" asp-controller="Account" class="hero-btn">Daxil Ol</a>
+                </div>
+            </section>
+    <section class="featured-cars">
+        @if (Model.Count == 0)
+        {
+            <h2>Hal Hazirda Saytda Elan yoxdur</h2>
+            
+        }
+        else
+        {
+            <h2 style="font-family:'Poppins', sans-serif;color:#212A31">Aktiv Elanlar</h2>
+            <div class="cars-container">
+                    @foreach (var product in Model)
+                    {
+                       <a target="_blank" asp-action="Cars" style="text-decoration:none" asp-route-id="@product.Id">
+                        <div class="product-card">
+
+                            <div class="image-container">
+                                <img src="~/AvtoHubImages/@product.ImagePath" alt="Car Image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="price">@product.Price</h3>
+                                <p class="car-model">@product.Marka,@product.Model</p>
+                                <p class="details">@product.EnginePower (m3), @product.MileAge km</p>
+                                <p class="location">@product.Price manat</p>
+                            </div>
+                        </div>
+                       </a>
+                    }
+            </div>
+        }
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AutoHub. All Rights Reserved.</p>
+    </footer>
+    <style>
+        #product-card-link :hover{
+            text-decoration:none
+        }
+
+        #product-card-link :active {
+            text-decoration: none
+        }
+              /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .search-bar input[type="text"],
+        .search-bar select {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        /*BUTTON OF LOGOUT*/
+        button {
+  padding: 10px 20px;
+  margin-left:10px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+        /* Header Styles */
+        header {
+            transition: transform 0.3s ease;
+            background-color: #2c3e50;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        :root {
+            --main-color: #124E66;
+            --secondary-color: #C0392B;
+            --light-color: #f5f5f5;
+            --dark-color: #212A31;
+            --hover-color: #0a3749;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+                color: #3498db;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+                        color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+                            color: #3498db;
+            transition: color 0.3s ease-in-out;
+        }
+        .auth-buttons {
+            display: flex;
+            margin-left: auto; /* Bu xətti əlavə edin */
+            margin-right: 70px;
+        }
+
+        .auth-buttons a {
+            margin-left: 10px; /* Aralarındakı boşluğu azaldın */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn {
+            background-color: #124E66;
+        }
+
+        .logout-btn {
+            background-color: #C0392B;
+        }
+
+            .logout-btn a:hover {
+            background-color: #0a3749;
+        }
+
+        /* Search Bar Styles */
+        .search-bar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .search-bar input[type="text"],
+        .search-bar select {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .search-bar input[type="text"]:focus,
+        .search-bar select:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #124E66;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover,
+        .hero-btn:hover {
+            background-color: var(--hover-color);
+            transform: translateY(-2px);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') no-repeat center center/cover;
+        background-attachment: fixed;
+        }
+
+        @@keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Hero Section Styles */
+        .hero-section {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            position: relative;
+            top: 120px;
+        }
+        @@media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .search-bar {
+                flex-direction: column;
+            }
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 700px;
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: #124E66;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #0a3749;
+        }
+
+        /* Featured Cars Section */
+       /* Featured Cars Section */
+/* Featured Cars Section */
+.featured-cars {
+    padding: 100px 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.featured-cars h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Grid Layout for Product Cards */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap; /* Sətirlərə keçməyə icazə verər */
+            gap: 20px; /* Kartlar arasında boşluq */
+        }
+/* Product Card Styles */
+        .product-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+            .product-card:hover {
+                transform: translateY(-10px);
+            }
+        .cars-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px; /* Adds space between rows and columns */
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-info {
+            margin-top: 10px;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #124E66;
+        }
+
+        .car-model,
+        .details,
+        .location {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+/* Hover Effect for Shadow */
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@@media screen and (max-width: 1200px) {
+    .cars-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@@media screen and (max-width: 900px) {
+    .cars-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@@media screen and (max-width: 600px) {
+    .cars-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+}
+
+
+
+        /* Footer Styles */
+     footer {
+    background-color: #212A31;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}   
+
+    </style>
+@* 
+    <script>
+        let lastScrollTop = 0; // Son scroll mövqeyini saxlayır
+        const header = document.querySelector('header'); // Header elementini seçir
+
+        window.addEventListener('scroll', function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Cari scroll mövqeyini alır
+
+            if (currentScroll > lastScrollTop) {
+                // Aşağıya scroll edilərkən
+                header.style.transform = 'translateY(-100%)'; // Header'i gizlədir
+            } else {
+                // Yuxarıya scroll edilərkən
+                header.style.transform = 'translateY(0)'; // Header'i göstərir
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Son scroll mövqeyini yeniləyir
+        });
+
+    </script> *@
+</body>
+</html>

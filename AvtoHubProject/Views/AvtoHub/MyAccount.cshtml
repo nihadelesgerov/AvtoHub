@@ -1,0 +1,276 @@
+﻿@model List<AvtoHubProject.Models.Product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstifadəçi Profili</title>
+    <link rel="icon" href="~/logoAvtoHub.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>AvtoHub</h1>
+            </div>
+            <div class="nav-links">
+                <a asp-action="HomePage">Elanlar</a>
+                <a asp-action="Contact">Əlaqə</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profil Kartı -->
+    <section id="profil" class="profile-section">
+        <div class="profile-card">
+            <h2>Şəxsi məlumat</h2>
+            <ul>
+                <li><strong>Telefon:</strong> (050) 631-64-63</li>
+                <li><strong>Email:</strong> @ViewBag.Email</li>
+                <li><strong>Elan sayı:</strong> @ViewBag.ProductCounts</li>
+            </ul>
+            <form asp-action="add" asp-controller="AvtoHub" method="get">
+                <button class="new-ad-btn">Yeni Elan Paylaş</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bütün Elanlar -->
+    <section id="butun-elanlar" class="ads-container">
+        <div class="ads-grid">
+                <h2>Bütün Elanlar</h2>
+                @foreach (var items in Model)
+                {
+                    <div class="ad-card">
+                    <img src="~/AvtoHubImages/@items.ImagePath" alt="Car Image">
+                        <div class="ad-details">
+                        <h3>@items.Price ₼</h3>
+                        <p>@items.Marka @items.Model</p>
+                        <p>@items.ProductionYear | @items.EnginePower HP | @items.MileAge km</p>
+                        </div>
+                        <div class="ad-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Düzəliş et</button>
+                            <button class="delete-btn"><i class="fas fa-trash-alt"></i> Sil</button>
+                        </div>
+                    </div>
+                }
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="app-links">
+                <a href="#">App Store</a>
+                <a href="#">Google Play</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #124E66;
+            padding: 10px 20px;
+        }
+
+            .navbar .logo h1 {
+                color: #fff;
+                font-weight: 600;
+            }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+            .nav-links a:hover {
+                background-color: #0a3c4e;
+                border-radius: 5px;
+            }
+
+        /* Profile section */
+        .profile-section {
+            background-color: #e7f4f7;
+            padding: 50px 0;
+            text-align: center;
+            flex: 1;
+        }
+
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            position: relative;
+        }
+
+            .profile-card h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .profile-card ul {
+                list-style: none;
+                padding: 0;
+                font-size: 16px;
+                color: #333;
+            }
+
+                .profile-card ul li {
+                    margin-bottom: 10px;
+                }
+
+                    .profile-card ul li strong {
+                        font-weight: 600;
+                    }
+
+        .new-ad-btn {
+            display: inline-block;
+            background-color: #d53030;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+            .new-ad-btn:hover {
+                background-color: #c12b2b;
+            }
+
+        .profile-pic img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .ads-container {
+            padding: 50px 0;
+        }
+
+        .ads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 10%;
+        }
+
+        .ad-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+        }
+
+        /* .ad-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        } */
+
+        .ad-details {
+            padding: 15px;
+        }
+
+        .ad-actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .edit-btn, .delete-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .edit-btn:hover, .delete-btn:hover {
+                background-color: #0056b3;
+            }
+
+        /* Footer */
+        footer {
+            background-color: #124E66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Ensures footer sticks to the bottom */
+            position: relative;
+            width: 100%;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+            footer .app-links a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: #007bff;
+                border-radius: 5px;
+                margin: 10px;
+            }
+
+                footer .app-links a:hover {
+                    background-color: #0056b3;
+                }
+
+        @@media screen and (max-width: 768px) {
+            .navbar {
+                padding: 10px 10px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .profile-card {
+                padding: 30px 20px;
+            }
+
+            .ads-grid {
+                padding: 0 5%;
+            }
+        }
+
+    </style>
+</body>
+</html>    

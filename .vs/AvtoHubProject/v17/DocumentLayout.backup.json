@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\views\\avtohub\\cars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\avtohub\\cars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\views\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\views\\avtohub\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\avtohub\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\source\\repos\\avtohubproject\\avtohubproject\\views\\avtohub\\myaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\avtohub\\myaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cars.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
+              "RelativeToolTip": "AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T19:53:15.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminHub.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\AdminHub.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\AdminHub.cs",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\AdminHub.cs",
+              "RelativeToolTip": "AvtoHubProject\\Controllers\\AdminHub.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T15:08:47.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LockOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\Account\\LockOut.cshtml",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Views\\Account\\LockOut.cshtml",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\Account\\LockOut.cshtml",
+              "RelativeToolTip": "AvtoHubProject\\Views\\Account\\LockOut.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T15:08:18.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AvtoHub.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "RelativeToolTip": "AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAKEAAADvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T15:04:35.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "AvtoHubProject\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:59:27.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
+              "RelativeToolTip": "AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:51:39.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\MyAccount.cshtml",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Views\\AvtoHub\\MyAccount.cshtml",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Views\\AvtoHub\\MyAccount.cshtml",
+              "RelativeToolTip": "AvtoHubProject\\Views\\AvtoHub\\MyAccount.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:51:38.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\Account.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\Account.cs",
+              "ToolTip": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\Controllers\\Account.cs",
+              "RelativeToolTip": "AvtoHubProject\\Controllers\\Account.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAFUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T14:35:50.097Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

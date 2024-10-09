@@ -1,0 +1,355 @@
+﻿@model ProductModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elan Yerləşdir</title>
+    <link rel="icon" href="~/logoAvtoHub.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AvtoHub</div>
+            <nav>
+                <ul>
+                    <li><a asp-action="HomePage">Əsas səhifə</a></li>
+                    <li><a asp-action="About">Haqqımızda</a></li>
+                    <li><a href="#">Əlaqə</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 style="color:red">@Html.ValidationMessage("FailedUploading")</h1>
+        <section class="form-section">
+            <div class="container">
+                <h1>Elan Yerləşdir</h1>
+
+                <form enctype="multipart/form-data" asp-action="AddProduct" asp-controller="AvtoHub" method="post">
+                    <div class="form-group">
+                        <label asp-for="Marka"></label>
+                        <select asp-for="Marka" name="Marka" id="brand">
+                            <option value="">Seçin</option>
+                            <option value="Abarth">Abarth</option>
+                            <option value="Acura">Acura</option>
+                            <option value="Alfa Romeo">Alfa Romeo</option>
+                            <option value="Aprilia">Aprilia</option>
+                            <option value="Aston Martin">Aston Martin</option>
+           
+                        </select>
+                        <span style="color:red" asp-validation-for="Marka"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Model"></label>
+                        <input asp-for="Model" name="Model" type="text" id="model">
+                        <span style="color:red" asp-validation-for="Model"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="BanType"></label>
+                        <select asp-for="BanType" name="BanType" id="type">
+                            <option value="Avtobus">Avtobus</option>
+                            <option value="Dartqı">Dartqı</option>
+                            <option value="Fastbek">Fastbek</option>
+                            <option value="Fayton">Fayton</option>
+                            <option value="Furqon">Furqon</option>
+                        </select>
+                        <span style="color:red" asp-validation-for="BanType"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="GearBoxType"></label>
+                        <select asp-for="GearBoxType" name="GearBoxType"  id="type">
+                            <option value="">Seçin</option>
+                            <option value="Arxa">Arxa</option>
+                            <option value="Ön">Ön</option>
+                            <option value="Tam">Tam</option>
+                        </select>
+                        <span style="color:red" asp-validation-for="GearBoxType"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="City"></label>
+                        <select asp-for="City" name="City" id="type">
+                            <option value="">Seçin</option>
+                            <option value="Ağdam">Ağdam</option>
+                            <option value="Ağdaş">Ağdaş</option>
+                            <option value="Ağd">Ağdərə</option>
+                            <option value="Ağstafa">Ağstafa</option>
+                            <option value="Ağsu">Ağsu</option>
+                            <option value="Astara">Astara</option>
+                          
+                        </select>
+                        <span style="color:red" asp-validation-for="City"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OilType"></label>
+                        <select asp-for="OilType" name="OilType" id="type">
+                            <option value="">Seçin</option>
+                            <option value="Benzin">Benzin</option>
+                            <option value="Dizel">Dizel</option>
+                            <option value="Qaz">Qaz</option>
+                            <option value="Elektron">Elektron</option>
+                            <option value="Hibrid">Hibrid</option>
+                            <option value="Plug-in Hibrid">Plug-in Hibrid</option>
+                        </select>
+                        <span style="color:red" asp-validation-for="OilType"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Color"> </label>
+                        <select asp-for="Color" name="Color" id="type">
+                            <option value="">Seçin</option>
+                            <option value="qara">Qara</option>
+                            <option value="ag">Ağ</option>
+                            <option value="gumusu">Gümüşü</option>
+                            <option value="boz">Boz</option>
+                            <option value="qirmizi">Qırmızı</option>
+                            <option value="mavi">Mavi</option>
+                            <option value="yasil">Yaşıl</option>
+                            <option value="sari">Sarı</option>
+                            <option value="narinci">Narıncı</option>
+                            <option value="qehveyi">Qəhvəyi</option>
+                            <option value="benovseyi">Bənövşəyi</option>
+                            <option value="cehrayi">Çəhrayı</option>
+                            <option value="mat-qara">Mat Qara</option>
+                            <option value="inci-ag">İnci Ağ</option>
+                            <option value="metalik-gumusu">Metalik Gümüşü</option>
+                            <option value="deniz-mavisi">Dəniz Mavisi</option>
+                            <option value="mese-yasil">Meşə Yaşıl</option>
+                            <option value="gunbatimi-narinci">Günbatımı Narıncı</option>
+                            <option value="sampan-qizili">Şampan Qızılı</option>
+                            <option value="bordo">Bordo</option>
+                        </select>
+                        <span style="color:red" asp-validation-for="Color"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="MileAge" for="mileage">Mileage</label>
+                        <input asp-for="MileAge" id="mileage" name="MileAge" type="number" min="0" max="999999">
+                        <span style="color:red" asp-validation-for="MileAge"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="Price"></label>
+                        <input asp-for="Price" name="Price" type="number" id="price">
+                        <span style="color:red" asp-validation-for="Price"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ProductionYear" ></label>
+                        <select asp-for="ProductionYear" name="ProductionYear" id="type">
+                            <option value="">Seçin</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            
+               
+                        </select>
+                        <span style="color:red" asp-validation-for="ProductionYear"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="EnginePower">
+                           </label>
+                        <select asp-for="EnginePower" name="EnginePower" id="type">
+                            <option value="">Seçin</option>
+
+                            <option value="1000">1000</option>
+                            <option value="1100">1100</option>
+                            <option value="1200">1200</option>
+                            <option value="1300">1300</option>
+                            <option value="1400">1400</option>
+                            <option value="1500">1500</option>
+                            <option value="1600">1600</option>
+                            <option value="1700">1700</option>
+                            <option value="1800">1800</option>
+                            <option value="1900">1900</option>
+                            <option value="2000">2000</option>
+                            <option value="2100">2100</option>
+                            <option value="2200">2200</option>
+                            <option value="2300">2300</option>
+                            <option value="2400">2400</option>
+                            <option value="2500">2500</option>
+                            <option value="2600">2600</option>
+                            <option value="2700">2700</option>
+                            <option value="2800">2800</option>
+                          
+                        </select>
+                        <span style="color:red" asp-validation-for="EnginePower"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="FormFile" ></label>
+                        <input asp-for="FormFile" name="FormFile"  type="file" id="images"  accept="image/*" multiple>
+                        <span style="color:red" asp-validation-for="FormFile"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DetailedInformation"></label>
+                        <textarea asp-for="DetailedInformation" name="DetailedInformation" class="form-control"></textarea>
+                    </div>
+                   
+                    <button type="submit" class="submit-btn">Elanı Yerləşdir</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AvtoHub. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+        .submit-btn {
+            background-color: #124E66;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+            .submit-btn:hover {
+                background-color: #0b3b52;
+            }
+
+        textarea {
+            resize: vertical;
+        }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            header {
+                background-color: #124E66;
+                padding: 20px 0;
+            }
+
+                header .logo {
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                header nav ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                    header nav ul li {
+                        margin-left: 20px;
+                    }
+
+                        header nav ul li a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+
+            .form-section {
+                background-color: white;
+                padding: 40px 20px;
+                margin: 20px 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+                text-align: center;
+                color: #124E66;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+                .form-group label {
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+
+                .form-group input,
+                .form-group select {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+
+            button {
+                grid-column: span 2;
+                padding: 15px;
+                background-color: #124E66;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+                button:hover {
+                    background-color: #0a374c;
+                }
+
+            footer {
+                background-color: #124E66;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+    </style>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

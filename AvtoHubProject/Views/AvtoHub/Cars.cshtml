@@ -1,0 +1,382 @@
+﻿@model IList<AvtoHubProject.Models.Product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/logoAvtoHub.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    @if(User.Identity.IsAuthenticated && User.IsInRole("User"))
+    {
+        <header>
+            <div class="logo">Auto<span>Hub</span></div>
+            <nav>
+                <ul>
+                    <li><a asp-action="HomePage"> Home</a></li>
+                    <li><a asp-action="About">About</a></li>
+                    <li><a asp-action="Contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <form asp-controller="AvtoHub" asp-action="MyAccount" method="get">
+                        <button id="btn">@User.Identity.Name</button>
+                    </form>
+                    <form asp-controller="Account" asp-action="SignOut" method="post">
+                        <button id="btn">Çıxış et</button>
+                    </form>
+
+                </div>
+            </nav>
+        </header>
+    }
+    else
+    {
+        <header>
+            <div class="logo">Auto<span>Hub</span></div>
+            <nav>
+                <ul>
+                    <li><a asp-action="HomePage"> Ana Səhifə</a></li>
+                    <li><a asp-action="About">Haqqımızda</a></li>
+                    <li><a asp-action="Contact">Əlaqə</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a asp-action="Login" asp-controller="Account" class="login-btn">Daxil Ol</a>
+                    <a asp-action="LogOut" asp-controller="Account" class="logout-btn">Qeydiyyatdan Keç</a>
+                </div>
+            </nav>
+        </header>
+    }
+
+    <main>
+        <section class="car-details">
+            <div class="car-image">
+                <img src="~/AvtoHubImages/@ViewBag.ImagePath" alt="Selected Car">
+            </div>
+            <div class="car-info">
+                <h1>@ViewBag.Marka,@ViewBag.Model</h1>
+                <p><b>Qiymət</b> @ViewBag.Price manat </p>
+                <p><b>Ban növü</b> : @ViewBag.BanType</p>
+                <p><b>Ötürücü</b> :  @ViewBag.GearBoxType</p>
+                <p><b>Istehsal Tarixi</b> @ViewBag.ProductionYear</p>
+                <p><b>Mühərrik</b> : @ViewBag.EnginePower L/@ViewBag.OilType</p>
+                <p><b>Yürüş</b> @ViewBag.MileAge km</p>
+                <p><b>Rəng</b> : @ViewBag.Color</p>
+                <p><b>Ətraflı Məlumat</b> @ViewBag.DetailedInformation</p>
+                <a class="contact-seller-btn">Elan Sahibi : @ViewBag.Contact</a>
+            </div>
+        </section>
+
+        <section class="related-cars">
+            <h2>Əlaqəli Avtomobillər</h2>
+            @foreach(var product in Model)
+            {
+                 <a target="_blank" asp-action="Cars" style="text-decoration:none" asp-route-id="@product.Id">
+                <div class="cars-container">
+                    <div class="car-card">
+                        <img src="~/AvtoHubImages/@product.ImagePath" alt="Car 2">
+                        <div class="car-info">
+                            <h3>@product.Marka,@product.Model</h3>
+                            <p>@product.Price manat</p>
+                            <p>@product.ProductionYear </p>
+                            <p>@product.EnginePower m3</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            }
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutoHub. All Rights Reserved.</p>
+    </footer>
+    <style>
+              /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .auth-buttons {
+            display: flex;
+            margin-left: auto; /* Bu xətti əlavə edin */
+            margin-right: 70px;
+        }
+
+            .auth-buttons a {
+                margin-left: 10px; /* Aralarındakı boşluğu azaldın */
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1em;
+                color: white;
+                transition: background-color 0.3s;
+            }
+
+        .login-btn {
+            background-color: #124E66;
+        }
+
+        .logout-btn {
+            background-color: #C0392B;
+        }
+
+            .logout-btn a:hover {
+                background-color: #0a3749;
+            }
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fffffffff;
+        }
+
+        .logo span {
+                color: #3498db;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+                        color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+                            color: #3498db;
+        }
+
+        .auth-buttons {
+            display: flex;
+            margin-left: auto;
+            margin-right: 70px;
+        }
+
+            .auth-buttons a,
+            button {
+                margin-left: 10px;
+                padding: 10px 20px;
+                border-radius: 25px; /* Rounded edges for a modern look */
+                text-decoration: none;
+                font-size: 1em;
+                color: black;
+                position: relative;
+                overflow: hidden;
+                transition: color 0.4s;
+                border: none;
+            }
+
+        .login-btn {
+            background: linear-gradient(45deg, #124E66, #C0392B);
+        }
+
+        .logout-btn {
+            background: linear-gradient(45deg, #C0392B, #124E66);
+        }
+
+        .auth-buttons a::before,
+        .auth-buttons button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s;
+            z-index: 0;
+        }
+
+        .auth-buttons a:hover::before,
+        .auth-buttons button:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .auth-buttons a:hover,
+        .auth-buttons button:hover {
+            color: var(--blue-color);
+            transition: color 0.4s ease-in-out;
+        }
+
+        .login-btn {
+            background-color: #124E66;
+        }
+
+        .logout-btn {
+            background-color: #C0392B;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #0a3749;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding-top: 120px;
+        }
+
+        /* Car Details Section */
+        .car-details {
+            display: flex;
+            padding: 50px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            margin-top: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .car-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .car-info {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .car-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .car-info p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .contact-seller-btn {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .contact-seller-btn:hover {
+                background-color: #21618c;
+            }
+
+        /* Related Cars Section */
+        .related-cars {
+            padding: 50px;
+            background-color: #f5f5f5;
+            text-align: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .related-cars h2 {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .cars-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .car-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .car-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .car-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .car-info p {
+            font-size: 1.2em;
+            color: #124E66;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #212A31;
+            color: #fff;
+            text-align: center;
+            padding: 20px 50px;
+        }
+
+    </style>
+</body>
+</html>
