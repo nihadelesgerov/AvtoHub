@@ -3,44 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\bannedusersauthorize\\bannedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\adminhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\controllers\\avtohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\authorizationservices\\authpolicyforusers\\onlyusersauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\views\\account\\accesdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\views\\avtohub\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\views\\avtohub\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|solutionrelative:avtohubproject\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54F0E1E5-B610-4803-A769-C6619A92310E}|AvtoHubProject\\AvtoHubProject.csproj|c:\\users\\nihad\\dostnetreplica\\avtohubclone\\avtohub\\avtohubproject\\models\\avtohubuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -99,19 +99,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BannedUsersHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
-              "RelativeToolTip": "AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T13:02:54.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "OnlyUsersAuthorizeHandler.cs",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorizeHandler.cs",
               "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorizeHandler.cs",
@@ -124,98 +111,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\Account.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\Account.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\Account.cs",
-              "RelativeToolTip": "AvtoHubProject\\Controllers\\Account.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAGkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:35:50.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Program.cs",
               "RelativeDocumentMoniker": "AvtoHubProject\\Program.cs",
               "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Program.cs",
               "RelativeToolTip": "AvtoHubProject\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAADgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T12:18:01.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AvtoHub.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AvtoHub.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\AvtoHub.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AvtoHub.cs",
-              "RelativeToolTip": "AvtoHubProject\\Controllers\\AvtoHub.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFAAAAANAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\Account.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\Account.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\Account.cs",
+              "RelativeToolTip": "AvtoHubProject\\Controllers\\Account.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAFUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:04:35.099Z",
+              "WhenOpened": "2024-10-09T14:35:50.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\LoginService.cs",
+              "RelativeToolTip": "AvtoHubProject\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:20:02.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdminHub.cs",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AdminHub.cs",
               "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\AdminHub.cs",
               "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AdminHub.cs",
               "RelativeToolTip": "AvtoHubProject\\Controllers\\AdminHub.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T15:08:47.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OnlyUsersAuthorize.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
-              "RelativeToolTip": "AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T13:00:22.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\appsettings.json",
-              "RelativeDocumentMoniker": "AvtoHubProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\appsettings.json",
-              "RelativeToolTip": "AvtoHubProject\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-12T12:47:50.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterService.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\RegisterService.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\Services\\RegisterService.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\RegisterService.cs",
-              "RelativeToolTip": "AvtoHubProject\\Services\\RegisterService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:19:55.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "BannedUsers.cs",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsers.cs",
               "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsers.cs",
@@ -228,7 +176,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BannedUsersHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
+              "RelativeToolTip": "AvtoHubProject\\AuthorizationServices\\BannedUsersAuthorize\\BannedUsersHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:02:54.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\RegisterService.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Services\\RegisterService.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\RegisterService.cs",
+              "RelativeToolTip": "AvtoHubProject\\Services\\RegisterService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:19:55.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AvtoHub.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "RelativeToolTip": "AvtoHubProject\\Controllers\\AvtoHub.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAsAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T15:04:35.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\appsettings.json",
+              "RelativeDocumentMoniker": "AvtoHubProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\appsettings.json",
+              "RelativeToolTip": "AvtoHubProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-12T12:47:50.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "OnlyUsersAuthorize.cs",
+              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
+              "RelativeDocumentMoniker": "AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
+              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
+              "RelativeToolTip": "AvtoHubProject\\AuthorizationServices\\AuthPolicyForUsers\\OnlyUsersAuthorize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:00:22.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AccesDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Views\\Account\\AccesDenied.cshtml",
               "RelativeDocumentMoniker": "AvtoHubProject\\Views\\Account\\AccesDenied.cshtml",
@@ -236,8 +249,7 @@
               "RelativeToolTip": "AvtoHubProject\\Views\\Account\\AccesDenied.cshtml",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T12:46:59.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T12:46:59.006Z"
             },
             {
               "$type": "Document",
@@ -249,25 +261,11 @@
               "RelativeToolTip": "AvtoHubProject\\Models\\AvtoHubUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:22:56.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T12:22:56.288Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "AvtoHubProject\\Services\\LoginService.cs",
-              "ToolTip": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Services\\LoginService.cs",
-              "RelativeToolTip": "AvtoHubProject\\Services\\LoginService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:20:02.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "HomePage.cshtml",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
               "RelativeDocumentMoniker": "AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
@@ -275,12 +273,11 @@
               "RelativeToolTip": "AvtoHubProject\\Views\\AvtoHub\\HomePage.cshtml",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T14:51:39.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:51:39.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Cars.cshtml",
               "DocumentMoniker": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
               "RelativeDocumentMoniker": "AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
@@ -288,8 +285,7 @@
               "RelativeToolTip": "AvtoHubProject\\Views\\AvtoHub\\Cars.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T19:53:15.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T19:53:15.254Z"
             },
             {
               "$type": "Document",

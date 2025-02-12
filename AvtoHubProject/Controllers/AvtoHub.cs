@@ -9,6 +9,7 @@ using System.IO;
 
 namespace AvtoHubProject.Controllers
 {
+    [Authorize(policy: "OnlyUsersCanExecute"),Authorize(policy: "RestrictBannedUsersFromExecuting")]
     public class AvtoHub : Controller
     {
         private readonly AvtoHubDbContext context;
@@ -32,7 +33,6 @@ namespace AvtoHubProject.Controllers
         }
         public IActionResult About() => View();
 
-        [Authorize]
         [Route("AvtoHub/profile")]
         public async Task<IActionResult> MyAccount()
         {
@@ -52,10 +52,9 @@ namespace AvtoHubProject.Controllers
             ViewBag.ProductCounts = list.Count();
             return View(list);
         }
-        [Authorize]
         [ValidateAntiForgeryToken]
         [AutoValidateAntiforgeryToken]
-        [Route("AvtoHub/add")]
+        [Route("[controller]/add")]
         [HttpGet]
         public async Task<IActionResult> AddProduct()
         {
@@ -72,7 +71,6 @@ namespace AvtoHubProject.Controllers
 
         //[RequestSizeLimit(5 * 1024 * 2014)]
         [ValidateAntiForgeryToken]
-        [Authorize]
         [AutoValidateAntiforgeryToken]
         [HttpPost]
         public async Task<IActionResult> AddProduct(ProductModel productModel)
@@ -135,8 +133,7 @@ namespace AvtoHubProject.Controllers
             }
             return View(productModel);
         }
-
-        [Authorize]
+        [AllowAnonymous]
         public  IActionResult Cars(int id)
         {
             var choosenProduct = context.AvtoHubProducts.Include(a=>a.AvtoHubUser).FirstOrDefault(a=>a.Id == id);

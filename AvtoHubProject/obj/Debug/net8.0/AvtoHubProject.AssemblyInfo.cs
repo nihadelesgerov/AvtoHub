@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AvtoHubProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d616557444e434e80cbe73408a40ea2dd96f05c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1471462ac0b485d7992c95f4f1f2b6bcef46bd6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AvtoHubProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AvtoHubProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

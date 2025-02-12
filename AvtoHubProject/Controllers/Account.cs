@@ -1,4 +1,5 @@
 ﻿using AvtoHubProject.Models;
+using AvtoHubProject.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +12,19 @@ namespace AvtoHubProject.Controllers
         private readonly UserManager<AvtoHubUser> userManager;
         private readonly SignInManager<AvtoHubUser> signInManager;
         private readonly RoleManager<IdentityRole> roleManager;
+        private readonly RegisterService registerService;
+        private readonly Logger<Account> logger;
+        private readonly LoginService loginService;
 
-        public Account(AvtoHubDbContext context,UserManager<AvtoHubUser> userManager,SignInManager<AvtoHubUser> signInManager,RoleManager<IdentityRole> roleManager)
+        public Account(AvtoHubDbContext context,UserManager<AvtoHubUser> userManager,SignInManager<AvtoHubUser> signInManager,RoleManager<IdentityRole> roleManager,RegisterService registerService,Logger<Account> logger,LoginService loginService)
         {
             this.context = context;
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleManager = roleManager;
+            this.registerService = registerService;
+            this.logger = logger;
+            this.loginService = loginService;
         }
         public IActionResult Login()
         {
@@ -34,42 +41,16 @@ namespace AvtoHubProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(AvtoHubRegisterModel modelReg)
         {
-
             if (ModelState.IsValid)
             {
-                var user = new AvtoHubUser
-                {
-                    UserName=modelReg.Email,
-                    Email = modelReg.Email
-                };
-                var result = await userManager.CreateAsync(user, modelReg.Password);
-
+              var result = await registerService.RegisterUser(modelReg);
                 if (result.Succeeded)
                 {
-                    //if(modelReg.Email=="testadmin@gmail.com" && modelReg.Password == "Admin123#")
-                    //{
-                    //    await roleManager.CreateAsync(new IdentityRole("Admin"));
-                    //    await userManager.AddToRoleAsync(user, "Admin");
-                    //    await signInManager.SignInAsync(user, true, null);
-                    //    return RedirectToAction("AdminDashboard", "AdminHub");
-                    //}
-                    if (! await roleManager.RoleExistsAsync("User"))
-                    {
-                        await roleManager.CreateAsync(new IdentityRole("User"));
-                        await userManager.AddToRoleAsync(user, "User");
-                        await signInManager.SignInAsync(user, true, null);
-                        return RedirectToAction("HomePage", "AvtoHub");
-                    }
-                    await userManager.AddToRoleAsync(user, "User");
-                    await signInManager.SignInAsync(user, true, null);
-                    return RedirectToAction("HomePage", "AvtoHub");
+                    return RedirectToAction("HomePage","AvtoHub");
                 }
-                foreach(var error in result.Errors)
-                {
-                    ModelState.AddModelError("RegisterFailed", error.Description);
-                    return View(modelReg);
-                }
-
+                ModelState.AddModelError("RegisterFailed", "Something went wrong while process");
+                logger.LogWarning($"User with email {modelReg.Email} failed to register");
+                return View(modelReg);
             }
             return View(modelReg);
         }
@@ -80,17 +61,15 @@ namespace AvtoHubProject.Controllers
         {
             if(ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync(logmodel.Email, logmodel.Password,isPersistent:true,lockoutOnFailure:true);
+                var result = await loginService.LoginUser(logmodel);
                 if(result.Succeeded)
                 {
+                    logger.LogInformation($"User with email {logmodel.Email} logged in ");
                     return RedirectToAction("HomePage", "AvtoHub");
-                }
-                else if (result.IsLockedOut)
-                {
-                    return RedirectToAction("LockOut");
                 }
                 else
                 {
+                    logger.LogInformation($"User with email  {logmodel.Email} failed to login");
                     ModelState.AddModelError("LoginFailed", "E-Poçt adresi və ya şifrə yanlışdır");
                     return View(logmodel);
                 }
@@ -104,6 +83,7 @@ namespace AvtoHubProject.Controllers
             return View();
         }
         [Authorize]
+        // SignOut method overrides ControllerBase SigOut, that may cause error but it's late to change every name in Razor Pages and others (Because I didn't use Layouts)
         public async Task<IActionResult> SignOut()
         {
             await signInManager.SignOutAsync();

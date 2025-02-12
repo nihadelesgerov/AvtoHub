@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sSZpwpv/r+0=",
+  "dgSpecHash": "P3YVuEUI6Hs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nihad\\source\\repos\\AvtoHubProject\\AvtoHubProject\\AvtoHubProject.csproj",
+  "projectFilePath": "C:\\Users\\Nihad\\DostNetReplica\\AvtoHubClone\\AvtoHub\\AvtoHubProject\\AvtoHubProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nihad\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Nihad\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
